@@ -1,28 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# ### <p style="text-align: right;"> &#9989; Pouria Khoushehchin.</p>
-# 
-# #### <p style="text-align: right;"> &#9989; Put your group member names here.</p>
-
-# # Day 24 - The global climate cycle
-# <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Carbon_cycle-cute_diagram.jpeg/500px-Carbon_cycle-cute_diagram.jpeg" width=400px>
-# 
-# ## Goals for today's in-class assignment
-# 
-# * Use the data on the global carbon cycle to create a [compartment model](https://en.wikipedia.org/wiki/Multi-compartment_model), and to make predictions about global climate change under a variety of circumstances
-# 
-# ## Assignment instructions
-# 
-# Work with your group to complete this assignment. Instructions for submitting this assignment are at the end of the notebook. The assignment is due at the end of class.  If you haven't completed all sections of the assignment, you still need to upload something!
-# 
-# **In today's class**, we are going to implement a [compartment model](https://en.wikipedia.org/wiki/Multi-compartment_model) describing the global carbon cycle using the data that you collected as part of the pre-class assignment, explicitly connect it to the models that you created in the last class, and to make predictions about global climate change.
-
-# ---
-# ### Step 1 - Developing a model with your group
-# 
-# **Before we do anything else,** spend some time discussing the pre-class assignment with your group.  In particular, ensure that you agree on all of the carbon reservoirs and fluxes.  Then, **come up with a compartment model on the whiteboard that implements**:
-# 
 # 1. the simplest possible model to show how the carbon reservoirs and fluxes change with time, which tracks just the major carbon reservoirs and *natural* fluxes
 # 2. one that includes [anthropogenic](https://www.merriam-webster.com/dictionary/anthropogenic) (i.e., human-caused) fluxes of carbon (which should be an extension of the first model), with a function that controls the flux of human-generated carbon over time.
 # 
@@ -46,14 +22,6 @@
 
 # ---
 # ### Step 2 - Implementing the model
-# 
-# Now, implement your second model and, most importantly, **test it!**
-# 
-# **First**, run it with the anthropogenic carbon flux set to zero - do the reservoirs evolve in the way you would expect based on your model? Do they stay at constant values? What would it take for this to be true? If they don't stay constant, do they increase/decrease in a way that is consistent with your model?
-# 
-# **Then**, if you set the human-generated carbon flux at 9 gigatons of carbon per year entering the atmosphere, does the amount of carbon increase in a way that is consistent with your modeling from the last class?  (Make sure to check your units to ensure that you convert from gigatons of carbon to parts per million of CO$_2$!)
-# 
-# As a reminder, you can find flux between all of the pools/reservoirs [here](http://globecarboncycle.unh.edu/CarbonPoolsFluxes.shtml).
 
 # In[30]:
 
@@ -203,27 +171,3 @@ plt.ylabel('Tempreture')
 plt.xlabel('Time')
 plt.title('Tempreture-My own scenario')
 plt.tight_layout()
-
-
-# ---
-# ### Step 4 - Making a more sophisticated model
-# 
-# If you have time, make a more sophisticated climate model, thinking back to the [Wikipedia article on the carbon cycle](https://en.wikipedia.org/wiki/Carbon_cycle) and the [Wikipedia page on carbon sequestration](https://en.wikipedia.org/wiki/Carbon_sequestration).  What additional reservoirs might you include?  How might you create a more sophisticated or accurate representation of each reservoir or carbon flux?  (For example, do any of the carbon fluxes depend on the amount of carbon dioxide in a given carbon reservoir?)  You may want to just think this through, but not write any code - that's just fine, but make some notes in the space provided below, if that's what you choose to do!
-# 
-
-# In[ ]:
-
-
-# Put code here
-#We can have actual numbers and rates and more components.
-
-
-# *Put your general thoughts/ideas here*
-
-# ---
-
-# ## Congratulations, you're done!
-# 
-# Submit this assignment by uploading your notebook to the course Desire2Learn web page.  Go to the "In-Class Assignments" folder, find the appropriate submission link, and upload everything there. Make sure your name is on it!
-
-# &#169; Copyright 2018,  Michigan State University Board of Trustees
