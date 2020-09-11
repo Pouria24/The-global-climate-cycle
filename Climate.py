@@ -1,40 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ### <p style="text-align: right;"> &#9989; Pouria Khoushehchin.</p>
-# 
-# #### <p style="text-align: right;"> &#9989; Put your group member names here.</p>
-
-# # Day 23 In-class Assignment: A simple model for global temperature
-# 
-# <img src="https://i.imgur.com/DyApJbB.png" width=400px>
-# 
-# ## Goals for today's in-class assignment
-# 
-# * Use the simple model you implemented in the pre-class assignment, as well as the datasets that you analyzed in the previous class period, to make models that predict global climate change under a variety of circumstances.
-# 
-# ## Assignment instructions
-# 
-# Work with your group to complete this assignment. Instructions for submitting this assignment are at the end of the notebook. The assignment is due at the end of class.  If you haven't completed all sections of the assignment, you still need to upload something!
-# 
-# **In today's class**, we are going to work with the simple climate model you implemented in the pre-class assignment, as well as some of the datasets that you analyzed in the previous class period.  
-# 
-# ---
-# **Before we do anything else,** check with the members of your group to make sure that you have correctly implemented the model - in particular, that you get the correct increase in temperature for the assumed carbon input!
-
-# ## Step 1: Verify the model parameter using data
-# 
-# In the pre-class assignment, we started the model in the year 2000 with a CO$_2$ concentration of 368 parts per million (ppm) and an average global temperature was 15° C (59° F).  We also assumed that the climate sensitivity factor, S, in the model is 3° C.
-# 
-# But now, you're going to calculate how the temperature would rise by **using the CO$_2$ concentration data from last class**. Then you will **plot your calculated temperature values along with the measured values from the temperature anomaly data to see how they compare**.
-# 
-# Remember, the temperature anomaly data is stored in the ```GLB.Ts.csv``` file and you need to make sure to convert temperature anomaly values like you did in our last class period. Also, assume that the average global temperature  was **14.3° C** when the CO$_2$ started in ~1960 (since the data just provides the temperature *difference*, not the absolute temperature, you'll need to add this value to the anomaly data).
-# 
-# Another reminder: the CO$_2$ concentration values are stored in ```co2_mm_mlo.txt```.
-# 
-# Once you've computed the temperature values using the CO$_2$ data, make your best estimate of the climate sensitivity factor **using the observed temperature data** over the period when you have both temperature and CO$_2$ concentration (approx. 1960 - present). You can do this by overplotting your modeled temperature values with the actual temperatures and changing the sensitivity factor to see how it changes the results.
-# 
-# **Was our original estimate of S = 3° C a reasonable choice?** What happens when you make this value bigger/smaller?
 
 # In[111]:
 
@@ -315,9 +278,3 @@ plt.title('Sea Level-My own scenario')
 plt.tight_layout()
 
 
-# ---
-# 
-
-# ## Congratulations, you're done!
-# 
-# Submit this assignment by uploading your notebook to the course Desire2Learn web page.  Go to the "In-Class Assignments" folder, find the appropriate submission link, and upload everything there. Make sure your name is on it!
